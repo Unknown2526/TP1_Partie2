@@ -61,5 +61,12 @@ public class LireFichier {
 				platCommande = false;
 			}
 		}
+		
+		CalculerFacture facture = new CalculerFacture(nom, plat, commande);
+
+		if (fic && nomCommande && platCommande) {
+
+			facture.calculer();
+		}
 	}
 }
